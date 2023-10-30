@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../static/style.css" />
+
+  <style>
+    a,
+    button,
+    input,
+    select,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    * {
+      margin: 0;
+      padding: 0;
+      border: none;
+      text-decoration: none;
+      appearance: none;
+      background: none;
+    }
+  </style>
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="abc">
+    <img class="loginimg" src="../static/images/loginimg.png" />
+    <div class="loginrect">
+      <div class="title">
+        <div class="login2">LOGIN</div>
+      </div>
+      <form action="{{url_for('login')}}" method="post">
+        <div class="logindetails">
+          <div class="input-group">
+            <label for="username" class="username">USERNAME</label>
+            <input type="text" name="username" id="username" class="input-field">
+          </div>
+          <div class="input-group">
+            <label for="password" class="password">PASSWORD</label>
+            <input type="password" name="password" id="password" class="input-field">
+          </div>
+        </div>
+        <div class="signup1">
+          <span><span class="signup1span1">Don’t have an account? </span><a href="{{url_for('register')}}"><span
+                class="signup1span2">SIGN UP</span></a></span>
+        </div>
+        <div class="submitbutton">
+          <div class="submitrect"></div>
+          <a href="{{url_for('login')}}"><button type="submit" class="submit">SUBMIT</button></a>.
+        </div>
+       {% for message in get_flashed_messages() %}
+        <div class="flash-message">
+          {{ message }}
+        </div>
+        {% endfor %}  
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>

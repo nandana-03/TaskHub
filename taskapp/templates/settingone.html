@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <style>
+    .modal-container {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      z-index: 1;
+      justify-content: center;
+      align-items: center;
+  }
+</style>
+</head>
+<body>
+    <div class="home">
+
+        <div class="homecontentbox"></div>
+                
+          <label class="textfieldtasks"></label>
+ 
+        
+        <label class="textfieldnotes"></label>
+        <div class="daysactive"></div>
+        
+        
+        
+        <div class="_217">217</div>
+        <div class="days-active">Days active</div>
+        <div class="my-account">My Account</div>
+        <div class="statistics">Statistics</div>
+        <div class="sidebar">
+          <div class="home1"><a href="{{url_for('home')}}">Home</a></div>
+          <div ><a href="{{url_for('task')}}" class="tasks1">Tasks</a></div>
+          <div class="notes3"><a href="{{url_for('notes')}}">Notes</a></div>
+        </div>
+        <div  class="task-1">
+          {% for task in tasks %}
+          <h1 style=" color: black;">{{task}}</h1>
+          {% endfor %}
+        </div>
+        <!-- <div  class="task-1"><label class="task-111"></label></div>
+        <div class="task-2"><label class="task-222"></label></div>
+        <div class="task-3"><label class="task-333"></label></div>
+        <div class="task-4"><label class="task-444"></label></div>
+        <div class="task-5"><label class="task-555"></label></div>
+        <div class="task-6"><label class="task-666"></label></div>
+        <div class="task-7"><label class="task-777"></label></div>
+       
+        <div class="task-12">{{tasks[0]}} </div>
+        <div class="task-22">Task #2</div>
+        <div class="task-32">Task #4</div>
+        <div class="task-42">Task #5</div>
+        <div class="task-52">Task #6</div>
+        <div class="task-62">Task #7</div>
+        <div class="task-72">Task #3</div> -->
+
+        <img class="fire-1" src="../static/images/fire 1.png" />
+        <div class="tasks-completed"></div>
+        <div class="_5">5</div>
+        <div class="tasks-completed2">Tasks completed</div>
+        <img class="yes-1" src="../static/images/yes 1.png" /><img
+          class="profile-1"
+          src="../static/images/profile 1.png"
+        />
+        <div class="iconplaceholder"></div>
+        <div class="frame-20">
+            <a href="{{url_for('logout')}}" class="logout">Logout</a>
+          </div>
+            <div class="icon"></div>
+            <div class="your-tasks-for-today">Your Tasks For Today.</div>
+            <div class="icon-add-circle"><button id="openModalButton" style="cursor:pointer" >
+              <svg
+                class="group"
+                width="107"
+                height="107"
+                viewBox="0 0 107 107"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M53.5 107C82.925 107 107 82.925 107 53.5C107 24.075 82.925 0 53.5 0C24.075 0 0 24.075 0 53.5C0 82.925 24.075 107 53.5 107Z"
+                  stroke="#1E1E1E"
+                  stroke-width="13"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M32.0999 53.5002H74.8999"
+                  stroke="#1E1E1E"
+                  stroke-width="13"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M53.5003 74.9001V32.1001"
+                  stroke="#1E1E1E"
+                  stroke-width="13"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+            </div>
+
+            <a href="smthg.php"><svg
+              class="icon-minus"
+              width="27"
+              height="3"
+              viewBox="0 0 27 3"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M25.5 3H1.5C0.68 3 0 2.32 0 1.5C0 0.68 0.68 0 1.5 0H25.5C26.32 0 27 0.68 27 1.5C27 2.32 26.32 3 25.5 3Z"
+                fill="#292D32"
+              />
+            </svg>
+        </a>
+
+        <a href="smthg.php"> <svg
+              class="icon-minus2"
+              width="27"
+              height="3"
+              viewBox="0 0 27 3"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M25.5 3H1.5C0.68 3 0 2.32 0 1.5C0 0.68 0.68 0 1.5 0H25.5C26.32 0 27 0.68 27 1.5C27 2.32 26.32 3 25.5 3Z"
+                fill="#292D32"
+              />
+            </svg>
+        </a>
+
+        <a href="smthg.php">
+            <svg
+            class="icon-minus3"
+            width="27"
+            height="3"
+            viewBox="0 0 27 3"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            >
+            <path
+                d="M25.5 3H1.5C0.68 3 0 2.32 0 1.5C0 0.68 0.68 0 1.5 0H25.5C26.32 0 27 0.68 27 1.5C27 2.32 26.32 3 25.5 3Z"
+                fill="#292D32"
+            />
+            </svg>
+        </a>
+        
+
+        <a href="smthg.php">
+            <svg
+            class="icon-minus4"
+            width="27"
+            height="3"
+            viewBox="0 0 27 3"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            >
+            <path
+                d="M25.5 3H1.5C0.68 3 0 2.32 0 1.5C0 0.68 0.68 0 1.5 0H25.5C26.32 0 27 0.68 27 1.5C27 2.32 26.32 3 25.5 3Z"
+                fill="#292D32"
+            />
+            </svg>
+        </a>
+       
+        <a href="smthg.php">
+            <svg
+            class="icon-minus5"
+            width="27"
+            height="3"
+            viewBox="0 0 27 3"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            >
+            <path
+                d="M25.5 3H1.5C0.68 3 0 2.32 0 1.5C0 0.68 0.68 0 1.5 0H25.5C26.32 0 27 0.68 27 1.5C27 2.32 26.32 3 25.5 3Z"
+                fill="#292D32"
+            />
+            </svg>
+        </a>
+        <a href="smthg.php">
+            <svg
+            class="icon-minus6"
+            width="27"
+            height="3"
+            viewBox="0 0 27 3"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            >
+            <path
+                d="M25.5 3H1.5C0.68 3 0 2.32 0 1.5C0 0.68 0.68 0 1.5 0H25.5C26.32 0 27 0.68 27 1.5C27 2.32 26.32 3 25.5 3Z"
+                fill="#292D32"
+            />
+            </svg>
+        </a>
+       
+        <a href="smthg.php">
+            <svg
+            class="icon-minus7"
+            width="27"
+            height="3"
+            viewBox="0 0 27 3"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            >
+            <path
+                d="M25.5 3H1.5C0.68 3 0 2.32 0 1.5C0 0.68 0.68 0 1.5 0H25.5C26.32 0 27 0.68 27 1.5C27 2.32 26.32 3 25.5 3Z"
+                fill="#292D32"
+            />
+            </svg>
+        </a>
+        </form>
+            
+    <div class="modal-container">
+      <div class="add-task">
+        <form action="{{url_for('add_task')}}", method="post">
+        <div class="add-your-task-here">Add your task here.</div>
+        <div class="enter-task-title">
+            <label for="task">Enter task title:</label>
+            <textarea name="title" id="title" cols="82" rows="2" class="ayt"></textarea>
+        </div>
+        <div class="brief-description-optional">
+            <label for="brief">Brief description(optional):</label>
+            <textarea name="brief" id="brief" cols="30" rows="10" class="ett"></textarea>
+        </div>
+            
+
+            
+            <div class="btn">
+                <!-- <a href="{{url_for('add_task')}}"><button class="btn2">submit</button></a> -->
+                <input type="submit" value="add-task" class="btn2">
+            </div>
+    </form>
+      </div>
+      </div>
+      <script>
+        // Get references to the button and the modal container
+        var openModalButton = document.getElementById("openModalButton");
+        var modalContainer = document.querySelector(".modal-container");
+    
+        // Function to open the modal
+        function openModal() {
+            modalContainer.style.display = "block";
+        }
+    
+        // Function to close the modal
+        function closeModal() {
+            modalContainer.style.display = "none";
+        }
+    
+        // Add click event listeners to the button
+        openModalButton.addEventListener("click", openModal);
+    
+        // Close the modal when clicking outside of it
+        modalContainer.addEventListener("click", function (event) {
+            if (event.target === modalContainer) {
+                closeModal();
+            }
+        });
+    </script>
+    
+            
+    
+
+
+    
+  </div>
+    
+      
+</body>
+</html>

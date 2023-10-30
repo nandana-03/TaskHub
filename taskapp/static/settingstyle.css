@@ -1,0 +1,322 @@
+.tasks,
+.tasks * {
+  box-sizing: border-box;
+}
+.tasks {
+  background: #f6f5fd;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+.taskspagecontentbox {
+  background: rgba(217, 217, 217, 0.25);
+  width: 902px;
+  height: 988px;
+  position: absolute;
+  left: 220px;
+  top: 0px;
+}
+.task-1 {
+  background: #8b64fd;
+  border-radius: 52px;
+  width: 31.875rem;
+  height: 23.25rem;
+  position: absolute;
+  left: 16rem;
+  top: 193px;
+}
+.task-2 {
+  background: rgba(220, 213, 45, 0.71);
+  border-radius: 52px;
+  width: 17.813rem;
+  height: 372px;
+  position: absolute;
+  left: 797px;
+  top: 193px;
+}
+.task-3 {
+  background: rgba(111, 226, 228, 0.77);
+  border-radius: 52px;
+  width: 259px;
+  height: 372px;
+  position: absolute;
+  left: 256px;
+  top: 584px;
+}
+.task-4 {
+  background: rgba(255, 126, 185, 0.95);
+  border-radius: 52px;
+  width: 259px;
+  height: 372px;
+  position: absolute;
+  left: 542px;
+  top: 584px;
+}
+.task-5 {
+  background: rgba(116, 237, 75, 0.71);
+  border-radius: 52px;
+  width: 259px;
+  height: 372px;
+  position: absolute;
+  left: 823px;
+  top: 584px;
+}
+.daysactive {
+  background: #8b64fd;
+  border-radius: 35px;
+  width: 211px;
+  height: 147px;
+  position: absolute;
+  left: 1144px;
+  top: 381px;
+}
+.taskscompleted {
+  background: #8b64fd;
+  border-radius: 35px;
+  width: 211px;
+  height: 147px;
+  position: absolute;
+  left: 834px;
+  top: 25px;
+}
+.task-12 {
+  color: #f6f5fd;
+  text-align: left;
+  font: 700 39px "Inter", sans-serif;
+  position: absolute;
+  left: 290px;
+  top: 222px;
+  width: 301px;
+  height: 51px;
+}
+.task-22 {
+  color: #f6f5fd;
+  text-align: left;
+  font: 700 39px "Inter", sans-serif;
+  position: absolute;
+  left: 826px;
+  top: 222px;
+  width: 301px;
+  height: 51px;
+}
+.task-32 {
+  color: #f6f5fd;
+  text-align: left;
+  font: 700 39px "Inter", sans-serif;
+  position: absolute;
+  left: 314px;
+  top: 601px;
+  width: 301px;
+  height: 51px;
+}
+.task-42 {
+  color: #f6f5fd;
+  text-align: left;
+  font: 700 39px "Inter", sans-serif;
+  position: absolute;
+  left: 591px;
+  top: 601px;
+  width: 301px;
+  height: 51px;
+}
+.task-52 {
+  color: #f6f5fd;
+  text-align: left;
+  font: 700 39px "Inter", sans-serif;
+  position: absolute;
+  left: 872px;
+  top: 601px;
+  width: 301px;
+  height: 51px;
+}
+._217 {
+  color: #f6f5fd;
+  text-align: left;
+  font: 700 39px "Inter", sans-serif;
+  position: absolute;
+  left: 1243px;
+  top: 420px;
+  width: 301px;
+  height: 51px;
+}
+.days-active {
+  color: #f6f5fd;
+  text-align: left;
+  font: 700 21px "Inter", sans-serif;
+  position: absolute;
+  left: 1190px;
+  top: 488px;
+  width: 301px;
+  height: 51px;
+}
+.my-account {
+  color: #1e1e1e;
+  text-align: left;
+  font: 700 39px "Inter", sans-serif;
+  position: absolute;
+  left: 1144px;
+  top: 25px;
+  width: 580px;
+  height: 51px;
+}
+.statistics {
+  color: #1e1e1e;
+  text-align: left;
+  font: 700 31px "Inter", sans-serif;
+  position: absolute;
+  left: 1172px;
+  top: 332px;
+  width: 152px;
+  height: 51px;
+}
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  left: 24px;
+  top: 211px;
+}
+.home {
+  color: #1e1e1e;
+  text-align: left;
+  font: 600 30px "Inter", sans-serif;
+  position: relative;
+  width: 185px;
+  height: 51px;
+}
+.tasks2 {
+  color: #8b64fd;
+  text-align: left;
+  font: 600 30px "Inter", sans-serif;
+  position: relative;
+  width: 185px;
+  height: 51px;
+}
+.notes {
+  color: #1e1e1e;
+  text-align: left;
+  font: 600 30px "Inter", sans-serif;
+  position: relative;
+  width: 185px;
+  height: 51px;
+}
+.fire-1 {
+  border-radius: 29.5px;
+  width: 59px;
+  height: 59px;
+  position: absolute;
+  left: 1172px;
+  top: 406px;
+}
+.tasks-completed {
+  background: #8b64fd;
+  border-radius: 35px;
+  width: 211px;
+  height: 147px;
+  position: absolute;
+  left: 1144px;
+  top: 545px;
+}
+._2 {
+  color: #f6f5fd;
+  text-align: left;
+  font: 700 39px "Inter", sans-serif;
+  position: absolute;
+  left: 1261px;
+  top: 584px;
+  width: 301px;
+  height: 51px;
+}
+.tasks-completed2 {
+  color: #f6f5fd;
+  text-align: left;
+  font: 700 21px "Inter", sans-serif;
+  position: absolute;
+  left: 1165px;
+  top: 652px;
+  width: 301px;
+  height: 51px;
+}
+._2-5 {
+  color: #f6f5fd;
+  text-align: left;
+  font: 700 39px "Inter", sans-serif;
+  position: absolute;
+  left: 901px;
+  top: 51px;
+  width: 301px;
+  height: 51px;
+}
+.tasks-completed3 {
+  color: #f6f5fd;
+  text-align: left;
+  font: 700 21px "Inter", sans-serif;
+  position: absolute;
+  left: 851px;
+  top: 119px;
+  width: 301px;
+  height: 51px;
+}
+.yes-1 {
+  width: 59px;
+  height: 59px;
+  position: absolute;
+  left: 1172px;
+  top: 584px;
+}
+.profile-1 {
+  border-radius: 100px;
+  border-style: dashed;
+  border-color: #000000;
+  border-width: 8px;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 1161px;
+  top: 91px;
+}
+.icon {
+  background: #8b64fd;
+  width: 181px;
+  height: 26px;
+  position: absolute;
+  left: 18px;
+  top: 25px;
+}
+.your-tasks-for-today {
+  color: #000000;
+  text-align: left;
+  font: 700 39px "Inter", sans-serif;
+  position: absolute;
+  left: 272px;
+  top: 78px;
+  width: 600px;
+  height: 229px;
+}
+.icon-add-circle {
+  position: absolute;
+  inset: 0;
+}
+.group {
+  position: absolute;
+  left: 969px;
+  top: 840px;
+  overflow: visible;
+}
+.icon-minus {
+  position: absolute;
+  left: 834px;
+  top: 522px;
+  overflow: visible;
+}
+.icon-minus2 {
+  position: absolute;
+  left: 301px;
+  top: 522px;
+  overflow: visible;
+}

@@ -1,0 +1,985 @@
+.abc,
+.abc * {
+  box-sizing: border-box;
+}
+.abc {
+  background: #f6f5fd;
+  width: 100rem;
+  height: auto;
+  position: fixed;
+}
+.loginimg {
+  background: linear-gradient(
+    to left,
+    rgba(139, 100, 253, 0.25),
+    rgba(139, 100, 253, 0.25)
+  );
+  width: 50vw;
+  height: 100vh;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.loginrect {
+  border-radius: 50px;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 2px;
+  width: 27vw;
+  height: 61vh;
+  position: absolute;
+  left: 62vw;
+  top: 18vh;
+}
+.loginrect .title {
+  left: 8vw;
+  top: 4vh;
+  width: 10vw;
+  height: 5vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loginrect .title .login2 {
+  color: #000000;
+  text-align: center;
+  font: 600 60px "Nunito", sans-serif;
+  position: relative;
+  left: 0vw;
+  top: 0vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loginrect .logindetails {
+  width: 20vw;
+  height: auto; 
+  position: absolute;
+  left: 3.2vw;
+  top: 18vh;
+}
+.loginrect .logindetails .input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5vh;
+  position: relative;
+
+}
+.loginrect .logindetails .username,
+.loginrect .logindetails .password {
+  color: #000000;
+  font: 400 25px "Nunito", sans-serif;
+  position: relative;
+
+}
+.loginrect .logindetails .input-field {
+  background: none;
+  position: relative;
+  border: none;
+  border-bottom: 2px solid #000000;
+  padding: 5px;
+  color: #000000;
+  font: 100 15px "Nunito", sans-serif;
+  margin-top: 5px;
+}
+
+.loginrect .submitbutton {
+  width: 12.5vw;
+  height: 6.5vh;
+  position: relative;
+  left: 7.5vw;
+  top: 45vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loginrect .submitbutton .submitrect {
+  background: #8b64fd;
+  border-radius: 33.5px;
+  width: 12.5vw;
+  height: 6.5vh;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loginrect .submitbutton .submit {
+  color: #f6f5fd;
+  text-align: center;
+  font: 600 30px "Nunito", sans-serif;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.loginrect .signup1 {
+  text-align: center;
+  font: 400 15px "Nunito", sans-serif;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 31vh;
+}
+.loginrect .signup1 .signup1span1 {
+  color: #000000;
+  font: 400 15px "Nunito", sans-serif;
+}
+.loginrect .signup1 .signup1span2 {
+  color: #8b64fd;
+  font: 400 15px "Nunito", sans-serif;
+  cursor: pointer;
+}
+
+/* sign up page stuff below*/
+
+
+.signuprect {
+  border-radius: 50px;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 2px;
+  width: 27vw;
+  height: 70vh;
+  position: absolute;
+  left: 62vw;
+  top: 14vh;
+  
+}
+.signuprect .title {
+  left: 4vw;
+  top: 4vh;
+  width: 20vw;
+  height: 5vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.signuprect .title .sign-up {
+  color: #000000;
+  text-align: center;
+  font: 600 60px "Nunito", sans-serif;
+  position: relative;
+  left: 0vw;
+  top: 0vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.signuprect .confirmbutton {
+  width: 12.5vw;
+  height: 6.5vh;
+  position: relative;
+  left: 7vw;
+  top: 55vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.signuprect .confirmbutton .confirmrect {
+  background: #8b64fd;
+  border-radius: 33.5px;
+  width: 12.5vw;
+  height: 6.5vh;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.signuprect .confirmbutton .confirm {
+  color: #f6f5fd;
+  text-align: center;
+  font: 600 30px "Nunito", sans-serif;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.signuprect .inputbox {
+  width: 20vw;
+  height: auto; 
+  position: absolute;
+  left: 3.2vw;
+  top: 16vh;
+}
+
+.signuprect .inputbox .input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4vh;
+  position: relative;
+
+}
+.signuprect .inputbox .username,
+.signuprect .inputbox .password,
+.signuprect .inputbox .email-id,
+.signuprect .inputbox .confirm-password{
+  color: #000000;
+  font: 400 25px "Nunito", sans-serif;
+  position: relative;
+
+}
+.signuprect .inputbox .input-field {
+  background: none;
+  position: relative;
+  border: none;
+  border-bottom: 2px solid #000000;
+  padding: 5px;
+  color: #000000;
+  font: 100 15px "Nunito", sans-serif;
+  margin-top: 5px;
+}
+
+/*home/dashboard*/
+
+.home,
+.home * {
+  box-sizing: border-box;
+}
+.home {
+  background: #f6f5fd;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+.homecontentbox {
+  background: rgba(217, 217, 217, 0.25);
+  width: 69vw;
+  height: 100vh;
+  position: relative;
+  left: 12.5vw;
+  top: 0vh;
+}
+.welcome-back-user {
+  background: #8b64fd;
+  border-radius: 52px;
+  width: 55vw;
+  height:18.3vh;
+  position: absolute;
+  left: 19vw;
+  top: 3.5vh;
+}
+.tasks-left-to-do {
+  background: #8b64fd;
+  border-radius: 52px;
+  width: 25vw;
+  height: 37vh;
+  position: absolute;
+  left: 19vw;
+  top: 59.5vh;
+}
+.reminder {
+  background: rgba(255, 0, 0, 0.63);
+  border-radius: 52px;
+  width: 55vw;
+  height: 30vh;
+  position: absolute;
+  left: 19vw;
+  top: 25.5vh;
+}
+.notes {
+  background: #8b64fd;
+  border-radius: 52px;
+  width: 25vw;
+  height: 37vh;
+  position: absolute;
+  left: 48vw;
+  top: 59.5vh;
+}
+.daysactive {
+  background: #8b64fd;
+  border-radius: 35px;
+  width: 211px;
+  height: 147px;
+  position: absolute;
+  left: 84.5vw;
+  top: 36.5vh;
+}
+.welcome-back-user-123 {
+  color: #f6f5fd;
+  text-align: left;
+  font: 700 39px "Inter", sans-serif;
+  position: absolute;
+  left: 38vw;
+  top: 5.8vh;
+  width: 62vw;
+  height: 51px;
+}
+.tasks-left-to-do2 {
+  color: #f6f5fd;
+  text-align: center;
+  font: 700 39px "Inter", sans-serif;
+  position: absolute;
+  left: 22vw;
+  top: 63.6vh;
+  width: 301px;
+  height: 51px;
+}
+.you-have-2-hours-25-minutes-before-this-day-ends {
+  color: #f6f5fd;
+  text-align: left;
+  font: 700 39px "Inter", sans-serif;
+  position: absolute;
+  left: 25vw;
+  top: 29.9vh;
+  width: 301px;
+  height: 188px;
+}
+.got-2-more-tasks-to-finish-keep-grinding {
+  color: #f6f5fd;
+  text-align: left;
+  font: 700 39px "Inter", sans-serif;
+  position: absolute;
+  left: 50vw;
+  top: 29.9vh;
+  width: 301px;
+  height: 188px;
+}
+.notes2 {
+  color: #f6f5fd;
+  text-align: center;
+  font: 700 39px "Inter", sans-serif;
+  position: absolute;
+  left: 52vw;
+  top: 63.52vh;
+  width: 301px;
+  height: 51px;
+}
+._217 {
+  color: #f6f5fd;
+  text-align: left;
+  font: 700 39px "Inter", sans-serif;
+  position: absolute;
+  left: 90vw;
+  top: 40.3vh;
+  width: 301px;
+  height: 51px;
+}
+.days-active {
+  color: #f6f5fd;
+  text-align: left;
+  font: 700 21px "Inter", sans-serif;
+  position: absolute;
+  left: 87.5vw;
+  top: 47vh;
+  width: 301px;
+  height: 51px;
+}
+.my-account {
+  color: #1e1e1e;
+  text-align: left;
+  font: 700 39px "Inter", sans-serif;
+  position: absolute;
+  left: 84vw;
+  top: 3vh;
+  width: 580px;
+  height: 51px;
+}
+.statistics {
+  color: #1e1e1e;
+  text-align: left;
+  font: 700 31px "Inter", sans-serif;
+  position: absolute;
+  left: 86.5vw;
+  top: 32vh;
+  width: 152px;
+  height: 51px;
+}
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  left: 1vw;
+  top: 20vh;
+}
+.home2 {
+  color: #8b64fd;
+  text-align: left;
+  font: 600 30px "Inter", sans-serif;
+  position: relative;
+  width: 185px;
+  height: 51px;
+}
+.home1 {
+  color: #1e1e1e;
+  text-align: left;
+  font: 600 30px "Inter", sans-serif;
+  position: relative;
+  width: 185px;
+  height: 35px;
+}
+a{
+    text-decoration: none;
+    color: #1E1E1E;
+}
+a:hover{
+    color: #8b64fd;
+}
+.tasks {
+  color: #1e1e1e;
+  text-align: left;
+  font: 600 30px "Inter", sans-serif;
+  position: relative;
+  width: 185px;
+  height: 51px;
+}
+.notes3 {
+  color: #1e1e1e;
+  text-align: left;
+  font: 600 30px "Inter", sans-serif;
+  position: relative;
+  width: 185px;
+  height: 51px;
+}
+.pngtree-little-boy-say-hello-5397159-1 {
+  width: 404px;
+  height: 220px;
+  position: absolute;
+  left: 14vw;
+  top: 0.9vh;
+}
+.you-have-three-more-tasks-left-for-today-keep-grinding {
+  color: #ffffff;
+  text-align: left;
+  font: 400 25px "Inter", sans-serif;
+  position: absolute;
+  left: 38.5vw;
+  top: 13vh;
+  width: 426px;
+  height: 61px;
+}
+.fire-1 {
+  border-radius: 29.5px;
+  width: 59px;
+  height: 59px;
+  position: absolute;
+  left: 86vw;
+  top: 39vh;
+}
+.tasks-completed {
+  background: #8b64fd;
+  border-radius: 35px;
+  width: 211px;
+  height: 147px;
+  position: absolute;
+  left: 84.5vw;
+  top: 53vh;
+}
+/*tempqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq*/
+
+.textfieldtasks {
+  background: transparent;
+  border: transparent;
+  padding: 5px;
+  font: 100 15px "Nunito", sans-serif;
+  margin-top: 5px;
+  position: absolute;
+  left: 20.3vw;
+  top: 69vh;
+  width:385px;
+  height:240px;
+  border-color: transparent;
+}
+
+.textfieldnotes {
+  background: transparent;
+  border: transparent;
+  padding: 5px;
+  font: 100 15px "Nunito", sans-serif;
+  margin-top: 5px;
+  position: absolute;
+  left: 49.3vw;
+  top: 69vh;
+  width:385px;
+  height:240px;
+  border-color: transparent;
+}
+
+._5 {
+  color: #f6f5fd;
+  text-align: left;
+  font: 700 39px "Inter", sans-serif;
+  position: absolute;
+  left: 91vw;
+  top: 56vh;
+  width: 301px;
+  height: 51px;
+}
+.tasks-completed2 {
+  color: #f6f5fd;
+  text-align: left;
+  font: 700 21px "Inter", sans-serif;
+  position: absolute;
+  left: 85.5vw;
+  top: 63vh;
+  width: 301px;
+  height: 51px;
+}
+.yes-1 {
+  width: 59px;
+  height: 59px;
+  position: absolute;
+  left: 86vw;
+  top: 55vh;
+}
+.profile-1 {
+  border-radius: 100px;
+  border-style: dashed;
+  border-color: #000000;
+  border-width: 8px;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 84.5vw;
+  top: 8vh;
+}
+.iconplaceholder {
+  background: #8b64fd;
+  width: 181px;
+  height: 26px;
+  position: absolute;
+  left: 1vw;
+  top: 1.5vh;
+}
+.frame-20 {
+  background: rgba(255, 0, 0, 1);
+  border-radius: 25px;
+  padding: 25px 42px 25px 42px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 211px;
+  height: 54px;
+  position: absolute;
+  left: 84.5vw;
+  top: 86vh;
+  cursor: pointer;
+}
+.logout {
+  color: #f6f5fd;
+  text-align: left;
+  font: 600 30px/0% "Inter", sans-serif;
+  position: relative;
+  border: 0px;
+  background-color: rgba(255, 0, 0, 0.63);
+  cursor: pointer;
+}
+
+.logout:hover{
+  color:#f6f5fd;
+}
+
+.icon-add-circle {
+  width: 107px;
+  height: 107px;
+  position: static;
+}
+.group {
+  position: absolute;
+  left: 74vw;
+  top: 85vh;
+  overflow: visible;
+}
+
+
+
+/* Show the element when the button is clicked and it has focus */
+
+.add-task {
+  background: #8b64fd;
+  border-radius: 52px;
+  width: 806px;
+  height: 544px;
+  position: relative;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  align-content: center;
+  align-self: center;
+}
+.add-your-task-here {
+  color: #f6f5fd;
+  text-align: left;
+  font: 700 30px "Inter", sans-serif;
+  position: absolute;
+  left: 60px;
+  top: 48px;
+  width: 320px;
+  height: 51px;
+}
+.enter-task-title {
+  color: #f6f5fd;
+  text-align: left;
+  font: 600 30px "Inter", sans-serif;
+  position: absolute;
+  left: 60px;
+  top: 128px;
+  width: 320px;
+  height: 51px;
+}
+.brief-description-optional {
+  color: #f6f5fd;
+  text-align: left;
+  font: 600 30px "Inter", sans-serif;
+  position: absolute;
+  left: 60px;
+  top: 232px;
+  width: 432px;
+  height: 51px;
+}
+.title {
+  background: #d9d9d9;
+  border-radius: 18px;
+  opacity: 0.949999988079071;
+  width: 681px;
+  height: 36px;
+  position: absolute;
+  left: 60px;
+  top: 179px;
+}
+.desc {
+  background: #d9d9d9;
+  border-radius: 18px;
+  opacity: 0.949999988079071;
+  width: 681px;
+  height: 169px;
+  position: absolute;
+  left: 500px;
+  top: 283px;
+}
+.finish {
+  background: #f6f5fd;
+  border-radius: 23px;
+  padding: 15px 32px 15px 32px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 318px;
+  top: 469rem;
+  border-width: 0px;
+}
+.finish2 {
+  color: #8b64fd;
+  text-align: left;
+  font: 600 30px/0% "Inter", sans-serif;
+  position: relative;
+}
+
+
+
+.task-1 {
+  background: transparent;
+  border-radius: 52px;
+  width: 31.875rem;
+  height: 23.25rem;
+  position: absolute;
+  left: 16rem;
+  top: 193px;
+}
+.task-2 {
+  background: rgba(220, 213, 45, 0.71);
+  border-radius: 52px;
+  width: 17.813rem;
+  height: 372px;
+  position: absolute;
+  left: 797px;
+  top: 193px;
+}
+.task-3 {
+  background: rgba(111, 226, 228, 0.77);
+  border-radius: 52px;
+  width: 259px;
+  height: 372px;
+  position: absolute;
+  left: 256px;
+  top: 584px;
+}
+.task-4 {
+  background: rgba(255, 126, 185, 0.95);
+  border-radius: 52px;
+  width: 259px;
+  height: 372px;
+  position: absolute;
+  left: 542px;
+  top: 584px;
+}
+.task-5 {
+  background: rgba(116, 237, 75, 0.71);
+  border-radius: 52px;
+  width: 259px;
+  height: 372px;
+  position: absolute;
+  left: 823px;
+  top: 584px;
+}
+
+.task-6 {
+  background: rgba(255, 171, 60, 0.71);
+  border-radius: 52px;
+  width: 259px;
+  height: 372px;
+  position: absolute;
+  left: 1105px;
+  top: 193px;
+}
+
+.task-7 {
+  background: rgba(255, 101, 101, 0.71);
+  border-radius: 52px;
+  width: 259px;
+  height: 372px;
+  position: absolute;
+  left: 1105px;
+  top: 584px;
+}
+
+.task-12 {
+  color: #f6f5fd;
+  text-align: left;
+  font: 700 39px "Inter", sans-serif;
+  position: absolute;
+  left: 290px;
+  top: 222px;
+  width: 301px;
+  height: 51px;
+}
+.task-22 {
+  color: #f6f5fd;
+  text-align: left;
+  font: 700 39px "Inter", sans-serif;
+  position: absolute;
+  left: 826px;
+  top: 222px;
+  width: 301px;
+  height: 51px;
+}
+.task-32 {
+  color: #f6f5fd;
+  text-align: left;
+  font: 700 39px "Inter", sans-serif;
+  position: absolute;
+  left: 314px;
+  top: 601px;
+  width: 301px;
+  height: 51px;
+}
+.task-42 {
+  color: #f6f5fd;
+  text-align: left;
+  font: 700 39px "Inter", sans-serif;
+  position: absolute;
+  left: 591px;
+  top: 601px;
+  width: 301px;
+  height: 51px;
+}
+.task-52 {
+  color: #f6f5fd;
+  text-align: left;
+  font: 700 39px "Inter", sans-serif;
+  position: absolute;
+  left: 872px;
+  top: 601px;
+  width: 301px;
+  height: 51px;
+}
+.task-62 {
+  color: #f6f5fd;
+  text-align: left;
+  font: 700 39px "Inter", sans-serif;
+  position: absolute;
+  left: 1160px;
+  top: 601px;
+  width: 301px;
+  height: 51px;
+}
+.task-72 {
+  color: #f6f5fd;
+  text-align: left;
+  font: 700 39px "Inter", sans-serif;
+  position: absolute;
+  left: 1160px;
+  top: 222px;
+  width: 301px;
+  height: 51px;
+}
+
+.tasks2 {
+  color: #8b64fd;
+  text-align: left;
+  font: 600 30px "Inter", sans-serif;
+  position: relative;
+  width: 185px;
+  height: 51px;
+}
+
+.your-tasks-for-today {
+  color: #000000;
+  text-align: left;
+  font: 700 39px "Inter", sans-serif;
+  position: absolute;
+  left: 272px;
+  top: 78px;
+  width: 600px;
+  height: 229px;
+}
+.icon-add-circle {
+  position: absolute;
+  inset: 0;
+}
+.group {
+  position: absolute;
+  left: 1185px;
+  top: 40px;
+  overflow: visible;
+}
+
+.icon-minus {
+  position: absolute;
+  left: 834px;
+  top: 530px;
+  overflow: visible;
+}
+.icon-minus2 {
+  position: absolute;
+  left: 301px;
+  top: 530px;
+  overflow: visible;
+}
+.icon-minus3 {
+  position: absolute;
+  left: 567px;
+  top: 920px;;
+  overflow: visible;
+}
+.icon-minus4 {
+  position: absolute;
+  left: 855px;
+  top: 920px;;
+  overflow: visible;
+}
+.icon-minus5 {
+  position: absolute;
+  left: 279px;
+  top: 920px;
+  overflow: visible;
+}
+.icon-minus6 {
+  position: absolute;
+  left: 1150px;
+  top: 530px;
+  overflow: visible;
+}
+.icon-minus7 {
+  position: absolute;
+  left: 1140px;
+  top: 920px;
+  overflow: visible;
+}
+
+.tasks1 {
+  color: #8b64fd;
+  text-align: left;
+  font: 600 30px "Inter", sans-serif;
+  position: relative;
+  width: 185px;
+  height: 51px;
+}
+.btn{
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  margin-left: 500px;
+  color: #000;
+}
+.btn2{
+  font-size: 30px;
+  color: #000;
+}
+
+.notes33 {
+  color: #8b64fd;
+  text-align: left;
+  font: 600 30px "Inter", sans-serif;
+  position: relative;
+  width: 185px;
+  height: 51px;
+}
+
+.task-111 {
+  background: transparent;
+  border-radius: 52px;
+  top:93px;
+  width: 510px;
+  height: 280px;
+  position: absolute;
+  
+}
+.task-222 {
+  background: transparent;
+  border-radius: 52px;
+  top:93px;
+  width: 285px;
+  height: 280px;
+  position: absolute;
+ 
+}
+.task-333 {
+  background: transparent;
+  border-radius: 52px;
+  top:93px;
+  width: 259px;
+  height: 280px;
+  position: absolute;
+ 
+}
+.task-444 {
+  background: transparent;
+  border-radius: 52px;
+  top:93px;
+  width: 259px;
+  height: 280px;
+  position: absolute;
+ 
+}
+.task-555 {
+  background: transparent;
+  border-radius: 52px;
+  top:93px;
+  width: 259px;
+  height: 280px;
+  position: absolute;
+ 
+}
+
+.task-666 {
+  background: transparent;
+  border-radius: 52px;
+  top:93px;
+  width: 259px;
+  height: 280px;
+  position: absolute;
+ 
+}
+
+.task-777 {
+  background: transparent;
+  border-radius: 52px;
+  top:93px;
+  width: 259px;
+  height: 280px;
+  position: absolute;
+ 
+}

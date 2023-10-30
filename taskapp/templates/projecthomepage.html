@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <div class="home">
+        <div class="homecontentbox"></div>
+        <div class="welcome-back-user"></div>
+        <div class="tasks-left-to-do"></div>
+                
+          <label class="textfieldtasks"></label>
+ 
+        <div class="reminder"></div>
+        <div class="notes"></div>
+        <label class="textfieldnotes"></label>
+        <div class="daysactive"></div>
+        <div class="welcome-back-user-123">Welcome {{username}}!!</div>
+        <div class="tasks-left-to-do2">Task</div>
+        <a href="{{url_for('home')}}"><div class="you-have-2-hours-25-minutes-before-this-day-ends"><h5>There are  {{remaining_hours}} hours and  {{remaining_minutes}} minutes left before the day ends.</h5>
+        </div>
+        </a>
+        <div class="got-2-more-tasks-to-finish-keep-grinding">
+          Got 2 more tasks to finish. Keep grinding.
+        </div>
+        <div class="notes2">Notes</div>
+        <div class="_217">217</div>
+        <div class="days-active">Days active</div>
+        <div class="my-account">My Account</div>
+        <div class="statistics">Statistics</div>
+        <div class="sidebar">
+          <div class="home2"><a href="{{url_for('home')}}">Home</a></div>
+          <div class="tasks"><a href="{{url_for('task')}}">Tasks</a></div>
+          <div class="notes3"><a href="{{url_for('notes')}}">Notes</a></div>
+        </div>
+        <img
+          class="pngtree-little-boy-say-hello-5397159-1"
+          src="../static/images/lil boy.png"
+        />
+        <div class="you-have-three-more-tasks-left-for-today-keep-grinding">
+          You have three more tasks left for today. Keep grinding!!
+        </div>
+        <img class="fire-1" src="../static/images/fire 1.png" />
+        <div class="tasks-completed"></div>
+        <div class="_5">5</div>
+        <div class="tasks-completed2">Tasks completed</div>
+        <img class="yes-1" src="../static/images/yes 1.png" /><img
+          class="profile-1"
+          src="../static/images/profile 1.png"
+        />
+        <div class="iconplaceholder"></div>
+        <div class="frame-20">
+          <a href="{{url_for('logout')}}"><button class="logout">Logout</button></a></div>
+            
+            
+      </div>
+      
+</body>
+</html>
